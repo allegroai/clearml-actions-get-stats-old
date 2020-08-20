@@ -2,21 +2,22 @@
 
 
 ![GitHub stars](https://img.shields.io/github/stars/allegroai/trains?style=social)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/shomratalon/trains-get-stats/Get%20task%20stats)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/allegroai/trains-get-stats/Get%20task%20stats)
 
 
 Get your task results to your repo! 
 
 
-This action will help you retrieve all Trains task results and post to Github discussion (issue or pull request). 
+This action helps to retrieve all Trains [Task](https://allegro.ai/docs/concepts_arch/concepts_arch/#tasks)
+ results and post to Github discussion (issue or pull request). 
 
 ## Usage
 ### Workflow Example
-This will add an action to your workflow that will comment the `TASK_ID` last metrics results to the current discussion. 
+This action adds an action to a workflow that will print the `TASK_ID` last metrics results to the current discussion. 
 
-Will work in both github issues and github pull requests comments.
+It works both in github issues and github pull requests comments.
 
-<img src="https://github.com/shomratalon/trains-get-stats/blob/master/docs/get_stats_flow.png?raw=true" width="100%">
+![image](docs/get_stats_flow.png)
 
 ```yaml
 name: Get task stats
@@ -28,7 +29,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Get task stats
-          uses: shomratalon/trains-get-stats@master
+          uses: allegroai/trains-get-stats@master
           id: train
           with:
             TRAINS_API_ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
