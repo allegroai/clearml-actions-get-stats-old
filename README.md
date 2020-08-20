@@ -2,8 +2,7 @@
 
 
 ![GitHub stars](https://img.shields.io/github/stars/allegroai/trains?style=social)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/allegroai/trains-get-stats/Get%20task%20stats)
-
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/allegroai/trains-actions-get-stats/Get%20task%20stats)
 
 Get your task results to your repo! 
 
