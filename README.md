@@ -1,14 +1,14 @@
-# GitHub Action For Retrieving You Experiment With Allegro Trains
+# GitHub Action For Retrieving Experiments Stats With Allegro Trains
 
 
 ![GitHub stars](https://img.shields.io/github/stars/allegroai/trains?style=social)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/allegroai/trains-actions-get-stats/Get%20task%20stats)
 
-Get your task results to your repo! 
+Get task results directly to your repo! 
 
 
 This action helps to retrieve all Trains [Task](https://allegro.ai/docs/concepts_arch/concepts_arch/#tasks)
- results and post to Github discussion (issue or pull request). 
+ results and post them to Github discussion (issue or pull request). 
 
 ## Usage
 ### Workflow Example
