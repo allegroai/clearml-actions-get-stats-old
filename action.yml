@@ -1,5 +1,5 @@
 # action.yml
-name: 'Trains train model'
+name: 'Trains get task stats'
 description: 'Clone and enqueue your task to train your model'
 inputs:
   TRAINS_API_ACCESS_KEY:
