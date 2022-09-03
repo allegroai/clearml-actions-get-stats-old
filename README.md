@@ -7,7 +7,7 @@
 Get task results directly to your repo! 
 
 
-This action helps to retrieve all ClearML [Tasks](https://allegro.ai/docs/concepts_arch/concepts_arch/#tasks)
+This action helps to retrieve all ClearML [Tasks](https://clear.ml/docs/latest/docs/fundamentals/task)
  results and post them to Github discussion (issue or pull request). 
 
 ## Usage
