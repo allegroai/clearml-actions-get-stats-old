@@ -2,9 +2,9 @@
 Get the statistics of your task's in a project
 
 Need to define in project secrets the follow:
- - TRAINS_API_ACCESS_KEY
- - TRAINS_API_SECRET_KEY
- - TRAINS_API_HOST
+ - CLEARML_API_ACCESS_KEY
+ - CLEARML_API_SECRET_KEY
+ - CLEARML_API_HOST
 """
 import json
 import os
@@ -13,7 +13,7 @@ from tabulate import tabulate
 import pandas as pd
 from github3 import login
 
-from trains import Task
+from clearml import Task
 
 
 def create_output_tables(retrieve_scalars_dict):
@@ -78,8 +78,8 @@ def create_stats_comment(project_stats):
 if __name__ == "__main__":
     # Get the user input
     base_task_id = os.getenv('INPUT_TASK_ID')
-    os.environ["TRAINS_API_ACCESS_KEY"] = os.getenv('INPUT_TRAINS_API_ACCESS_KEY')
-    os.environ["TRAINS_API_SECRET_KEY"] = os.getenv('INPUT_TRAINS_API_SECRET_KEY')
-    os.environ["TRAINS_API_HOST"] = os.getenv('INPUT_TRAINS_API_HOST')
+    os.environ["CLEARML_API_ACCESS_KEY"] = os.getenv('INPUT_CLEARML_API_ACCESS_KEY')
+    os.environ["CLEARML_API_SECRET_KEY"] = os.getenv('INPUT_CLEARML_API_SECRET_KEY')
+    os.environ["CLEARML_API_HOST"] = os.getenv('INPUT_CLEARML_API_HOST')
     stats = get_task_stats(base_task_id)
     create_stats_comment(stats)
