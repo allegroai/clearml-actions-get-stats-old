@@ -7,12 +7,13 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Get task stats
-          uses: allegroai/trains-actions-get-stats@master
+          uses: allegroai/clearml-actions-get-stats@master
           id: train
           with:
-            TRAINS_API_ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
-            TRAINS_API_SECRET_KEY: ${{ secrets.SECRET_KEY }}
-            TRAINS_API_HOST: ${{ secrets.TRAINS_API_HOST }}
+            CLEARML_API_ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
+            CLEARML_API_SECRET_KEY: ${{ secrets.SECRET_KEY }}
+            CLEARML_API_HOST: ${{ secrets.CLEARML_API_HOST }}
             TASK_ID: "6f98c7d181b84327ae12e64537a97960"
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            
